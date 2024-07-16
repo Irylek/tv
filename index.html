@@ -15,6 +15,14 @@
 </div>
 <div id="content">
   <div id="channels">
+    <span class="chl" onclick="togglePolsat()"><img src="https://i.imgur.com/tSyF2Hi.png" class="chi"/><span class="ch">News</span></span>
+    <div id="PolsatChannels" style="display: none; padding-left: 20px;">
+    <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-443.php', 'POLSAT NEWS HD')"><img src="https://i.imgur.com/yzsNl7C.jpeg" class="chi "/><span class="ch">Polsat News</span></span>
+    <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-444.php', 'TVN24 HD')"><img src="https://i.imgur.com/ABy2AYI.png" class="chi "/><span class="ch">TVN24</span></span>
+    <span class="chl" onclick="loadStream('https://tvp.info/ogladaj-na-zywo', 'TVP INFO')"><img src="https://i.imgur.com/RfjNU93.jpeg" class="chi "/><span class="ch">TVP Info (Stream 1)</span></span>
+    <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-452.php', 'TVP INFO')"><img src="https://i.imgur.com/RfjNU93.jpeg" class="chi "/><span class="ch">TVP Info (Stream 2)</span></span>
+    <span class="chl" onclick="loadYouTubeStream('dzntyCTgJMQ', 'TV REPUBLIKA')"><img src="https://i.imgur.com/jXv6xkc.jpeg" class="chi "/><span class="ch">TV Republika</span></span>
+    <span class="chl" onclick="loadYouTubeId('UCPiu4CZlknkTworskK79CPg', 'wPolsce.PL')"><img src="https://i.imgur.com/aQ9Zc9K.png" class="chi "/><span class="ch">wPolsce.PL</span></span></div>
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/tvp1.html', 'TVP1')"><img src="https://i.imgur.com/upAXwAe.png" class="chi "/><span class="ch">TVP1 HD</span></span>
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/tvp2.html', 'TVP2')"><img src="https://i.imgur.com/sqtvhHu.png" class="chi "/><span class="ch">TVP2 HD</span></span>
     <span class="chl" onclick="toggleTVP3()"><img src="https://i.imgur.com/HsU7zgk.png" class="chi"/><span class="ch">TVP3 SD</span></span>
@@ -35,11 +43,8 @@
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/tvp3szczecin.html', 'TVP3 SD')"><img src="https://i.imgur.com/HsU7zgk.png" class="chi "/><span class="ch">SZCZECIN</span></span>
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/tvp3warszawa.html', 'TVP3 SD')"><img src="https://i.imgur.com/HsU7zgk.png" class="chi "/><span class="ch">WARSZAWA</span></span>
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/tvp3wroclaw.html', 'TVP3 SD')"><img src="https://i.imgur.com/HsU7zgk.png" class="chi "/><span class="ch">WROCŁAW</span></span></div>
-    <span class="chl" onclick="togglePolsat()"><img src="https://i.imgur.com/7SfJouB.png" class="chi"/><span class="ch">Polsat - Kanały</span></span>
-    <div id="PolsatChannels" style="display: none; padding-left: 20px;">
     <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-562.php', 'POLSAT')"><img src="https://i.imgur.com/ShwQG5z.jpeg" class="chi "/><span class="ch">Polsat</span></span>
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/tv4.html', 'TV4')"><img src="https://i.imgur.com/YGilUcx.png" class="chi "/><span class="ch">TV4</span></span>
-    <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-443.php', 'POLSAT NEWS HD')"><img src="https://i.imgur.com/yzsNl7C.jpeg" class="chi "/><span class="ch">Polsat News</span></span>
     <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-564.php', 'POLSAT FILM HD')"><img src="https://i.imgur.com/JIT8j9Y.png" class="chi "/><span class="ch">Polsat Film</span></span></div>
     <span class="chl" onclick="toggleCanal()"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi"/><span class="ch">CANAL+</span></span>
     <div id="CanalChannels" style="display: none; padding-left: 20px;">
@@ -62,7 +67,6 @@
         <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-75.php', 'CANAL+ SPORT 5')"><img src="https://i.imgur.com/HscPBkD.jpeg" class="chi "/><span class="ch">CANAL Sport 5</span></span>
         <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-563.php', 'MOTOWIZJA')"><img src="https://i.imgur.com/bOl9APo.png" class="chi "/><span class="ch">Motowizja</span></span></div>
     <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-565.php', 'TVN HD')"><img src="https://i.imgur.com/QfYVVvj.png" class="chi "/><span class="ch">TVN</span></span>
-    <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-444.php', 'TVN24 HD')"><img src="https://i.imgur.com/ABy2AYI.png" class="chi "/><span class="ch">TVN24</span></span>
     <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-569.php', 'HBO HD')"><img src="https://i.imgur.com/C4RaflM.jpeg" class="chi "/><span class="ch">HBO</span></span>
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/4funtv.html', '4FUN TV')"><img src="https://i.imgur.com/GbAg3W0.jpeg" class="chi "/><span class="ch">4FUN TV</span></span>
     <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-568.php', 'FILMBOX PREMIUM HD POLAND')"><img src="https://i.imgur.com/8yPk6jy.png" class="chi "/><span class="ch">FilmBox Premium</span></span>
@@ -71,9 +75,6 @@
     <span class="chl" onclick="loadStream('https://kultura2.tvp.pl', 'TVP KULTURA 2')"><img src="https://i.imgur.com/YVmOsnb.png" class="chi"/><span class="ch">TVP Kultura 2</span></span>
     <span class="chl" onclick="loadStream('https://historia.tvp.pl/52614342/kanal-historia-2', 'TVP HISTORIA 2')"><img src="https://s.tvp.pl/files/portale-v4/tvp-pl/images/tvp-historia.jpg" class="chi"/><span class="ch">TVP Historia 2</span></span>
     <span class="chl" onclick="loadStream('https://polonia.tvp.pl/44562671/tvp-polonia-stream', 'TVP Polonia')"><img src="https://i.imgur.com/j2k77Lb.png" class="chi "/><span class="ch">TVP Polonia</span></span>
-    <span class="chl" onclick="loadStream('https://www.tvp.info/ogladaj-na-zywo', 'TVP INFO')"><img src="https://i.imgur.com/RfjNU93.jpeg" class="chi "/><span class="ch">TVP Info</span></span>
-    <span class="chl" onclick="loadYouTubeStream('dzntyCTgJMQ', 'TV REPUBLIKA')"><img src="https://i.imgur.com/jXv6xkc.jpeg" class="chi "/><span class="ch">TV Republika</span></span>
-    <span class="chl" onclick="loadYouTubeId('UCPiu4CZlknkTworskK79CPg', 'wPolsce.PL')"><img src="https://i.imgur.com/aQ9Zc9K.png" class="chi "/><span class="ch">wPolsce.PL</span></span>
     <span class="chl" onclick="loadStream('https://tvtoya.pl/player/live', 'TV Toya')"><img src="https://i.imgur.com/EboAP1s.jpeg" class="chi "/><span class="ch">TV Toya</span></span>
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/tvregionalna.html', 'TV REGIONALNA')"><img src="https://i.imgur.com/hAxJfE7.jpeg" class="chi "/><span class="ch">TV Regionalna</span></span>
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/sferatv.html', 'SFERA TV')"><img src="https://i.imgur.com/ZuFB3VG.png" class="chi "/><span class="ch">Sfera TV</span></span>
