@@ -15,14 +15,6 @@
 </div>
 <div id="content">
   <div id="channels">
-    <span class="chl" onclick="togglePolsat()"><img src="https://i.imgur.com/tSyF2Hi.png" class="chi"/><span class="ch">News</span></span>
-    <div id="PolsatChannels" style="display: none; padding-left: 20px;">
-    <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-443.php', 'POLSAT NEWS HD')"><img src="https://i.imgur.com/yzsNl7C.jpeg" class="chi "/><span class="ch">Polsat News</span></span>
-    <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-444.php', 'TVN24 HD')"><img src="https://i.imgur.com/ABy2AYI.png" class="chi "/><span class="ch">TVN24</span></span>
-    <span class="chl" onclick="loadStream('https://tvp.info/ogladaj-na-zywo', 'TVP INFO')"><img src="https://i.imgur.com/RfjNU93.jpeg" class="chi "/><span class="ch">TVP Info (Stream 1)</span></span>
-    <span class="chl" onclick="loadStream('https://dlhd.so/embed/stream-452.php', 'TVP INFO')"><img src="https://i.imgur.com/RfjNU93.jpeg" class="chi "/><span class="ch">TVP Info (Stream 2)</span></span>
-    <span class="chl" onclick="loadYouTubeStream('dzntyCTgJMQ', 'TV REPUBLIKA')"><img src="https://i.imgur.com/jXv6xkc.jpeg" class="chi "/><span class="ch">TV Republika</span></span>
-    <span class="chl" onclick="loadYouTubeId('UCPiu4CZlknkTworskK79CPg', 'wPolsce.PL')"><img src="https://i.imgur.com/aQ9Zc9K.png" class="chi "/><span class="ch">wPolsce.PL</span></span></div>
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/tvp1.html', 'TVP1')"><img src="https://i.imgur.com/upAXwAe.png" class="chi "/><span class="ch">TVP1 HD</span></span>
     <span class="chl" onclick="loadStream('https://irylek.github.io/stream/tvp2.html', 'TVP2')"><img src="https://i.imgur.com/sqtvhHu.png" class="chi "/><span class="ch">TVP2 HD</span></span>
     <span class="chl" onclick="toggleTVP3()"><img src="https://i.imgur.com/HsU7zgk.png" class="chi"/><span class="ch">TVP3 SD</span></span>
@@ -124,12 +116,12 @@ function toggleCanal() {
             }
 }
 
-function togglePolsat() {
-            var polsat = document.getElementById("PolsatChannels");
-            if (polsat.style.display === "none") {
-                polsat.style.display = "block";
+function toggleNews() {
+            var news = document.getElementById("NewsChannels");
+            if (news.style.display === "none") {
+                news.style.display = "block";
             } else {
-                polsat.style.display = "none";
+                news.style.display = "none";
             }
 }
 
